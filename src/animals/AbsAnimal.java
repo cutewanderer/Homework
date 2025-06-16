@@ -49,27 +49,26 @@ public abstract class AbsAnimal {
     public void eat(){
         System.out.println("Я ем!");
     }
-
     public String toString() {
-        return String.format();
+        return String.format("Привет, меня зовут - " + name + ", мне - " + age + getYearPadej() + ", я вешу - " + weight + " кг, мой цвет - " + color.getName());
     }
 
     private String getYearPadej() {
         if(age >= 11 && age <= 14) {
-            return "лет";
+            return " лет";
         }
         int ostatok = age % 10;
         if(ostatok == 0) {
-            return "лет";
+            return " лет";
         }
 
         if(ostatok == 1) {
-            return "год";
+            return " год";
         }
 
         if(ostatok >= 2 && ostatok <= 4) {
-            return "года";
+            return " года";
         }
-        return "лет";
+        return " лет";
     }
 }

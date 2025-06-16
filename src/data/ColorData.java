@@ -2,6 +2,7 @@ package data;
 
 public enum ColorData {
     WHITE("Белый"),
+    BLACK("Чёрный"),
     RED("Красный");
 
     private String name;
@@ -12,6 +13,4 @@ public enum ColorData {
     public String getName() {
         return name;
     }
-
-
 }

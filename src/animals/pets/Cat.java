@@ -9,6 +9,6 @@ public class Cat extends AbsAnimal {
     }
 
     public void say(){
-        System.out.println("Мяу");
+        System.out.println("МЯУ!");
     }
 }
